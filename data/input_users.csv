@@ -1,0 +1,4 @@
+﻿login,firstname,lastname,mail,auth_source_id
+"test20","tachibana","susumu","tachibana@mail.com",1
+"test21","tanaka","katsu","tanaka@gmail.com",0
+"test22","adachi","adachi","testest@amazom.com",1

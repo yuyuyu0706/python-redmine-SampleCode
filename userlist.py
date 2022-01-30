@@ -8,5 +8,5 @@ redmine = Redmine(URL, key=KEY)
 users = redmine.user.all(sort='category:desc')
 for user in users:
   last_login_on = getattr(user, "last_login_on", None)
-  print ('{},{},{}'.format(user.id, user.firstname, last_login_on))
+  print ('{},{},{},{}'.format(user.id, user.login, user.firstname, last_login_on))
 
