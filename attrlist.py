@@ -24,6 +24,20 @@ print("Group AttrList")
 print("----------------")
 print("{}\n".format(dir(group)))
 
+print("Group users AttrList")
+print("----------------")
+if len(group.users) > 0:
+  print("{}\n".format(dir(list(group.users)[0])))
+else:
+  print("Empty Group users\n")
+
+print("Group Memberships AttrList")
+print("----------------")
+if len(group.memberships) > 0:
+  print("{}\n".format(dir(list(group.memberships)[0])))
+else:
+  print("Empty Memberships\n")
+
 print("Issue AttrList")
 print("----------------")
 print("{}\n".format(dir(issue)))
