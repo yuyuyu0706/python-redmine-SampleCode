@@ -1,5 +1,6 @@
 import datetime
 import pandas as pd
+import redminelib
 from redminelib import Redmine
 
 URL="http://localhost:3010/"
@@ -21,5 +22,9 @@ for i in df.index:
   user.mail = df.iloc[i,3]
   user.auth_source_id = df.iloc[i,4]
   print("Read Data Row : {}:{}".format(i+1,user.login))
-  user.save()
-
+  try:
+    user.save()
+  except redminelib.exceptions.ValidationError as e:
+    print(e)
+    print(type(e))
+  
