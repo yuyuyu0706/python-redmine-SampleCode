@@ -8,6 +8,7 @@ redmine = Redmine(URL, key=KEY)
 
 project = redmine.project.get(1)
 user = redmine.user.get(1)
+group = redmine.group.get(6)
 issue = redmine.issue.get(1)
 field = redmine.custom_field.get(1)
 
@@ -18,6 +19,10 @@ print("{}\n".format(dir(project)))
 print("User AttrList")
 print("----------------")
 print("{}\n".format(dir(user)))
+
+print("Group AttrList")
+print("----------------")
+print("{}\n".format(dir(group)))
 
 print("Issue AttrList")
 print("----------------")
