@@ -1,0 +1,4 @@
+﻿pj_id,subject,tracker_id,desc,status_id,priority_id,assigned_to_id,custom_1,start_date,due_date
+"cirius","連続投稿1",1,"python-redmineから投稿してます",1,2,1,"テステス",2022/02/28,2022/04/01
+"cirius","連続投稿2",2,"python-redmineから投稿してます",2,1,5," ",2022/02/28,2022/04/01
+"cirius","連続投稿3",3,"python-redmineから投稿してます",3,2,1,"aa",2022/02/28,2022/04/01

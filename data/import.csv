@@ -1,0 +1,4 @@
+pj_id,subject,tracker_id,desc,status_id,priority_id,assigned_to_id,custom_1,start_date,due_date
+"cirius","連続投稿1","サポート","インポート機能から投稿してます","新規","通常","Redmine Admin","テステス",2022/02/28,2022/04/01
+"cirius","連続投稿2","機能","インポート機能から投稿してます","進行中","高め","Redmine Admin","",2022/02/28,2022/04/01
+"cirius","連続投稿3","バグ","インポート機能から投稿してます","フィードバック","急いで","Test User","aa",2022/02/28,2022/04/01
