@@ -1,14 +1,13 @@
-import datetime
 import pandas as pd
+import constant as cst
+import datetime
 import redminelib
 from redminelib import Redmine
 
-URL="http://localhost:3010/"
-KEY="4b65396a022e1658495caeef7e0684a8dcd186a7"
-PATH="./data/input_users.csv"
+#PATH="./data/input_users.csv"
 
-redmine = Redmine(URL, key=KEY)
-df = pd.read_csv(PATH)
+redmine = Redmine(cst.URL, key=cst.KEY)
+df = pd.read_csv(cst.U_PATH)
 
 df = df.astype({"auth_source_id": object})
 

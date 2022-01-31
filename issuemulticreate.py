@@ -1,14 +1,11 @@
-import datetime
 import pandas as pd
+import constant as cst
+import datetime
 from redminelib import Redmine
 
-URL="http://localhost:3010/"
-KEY="4b65396a022e1658495caeef7e0684a8dcd186a7"
-PATH="./data/input_issues.csv"
-
-redmine = Redmine(URL, key=KEY)
-df = pd.read_csv(PATH, parse_dates=["start_date","due_date"])
-#df = pd.read_csv(PATH)
+redmine = Redmine(cst.URL, key=cst.KEY)
+df = pd.read_csv(cst.I_PATH, parse_dates=["start_date","due_date"])
+#df = pd.read_csv(cst.I_PATH)
 
 df = df.astype({"tracker_id": object})
 df = df.astype({"status_id": object})
