@@ -1,9 +1,7 @@
-import os
 import constant as cst
 import datetime
 from redminelib import Redmine
 
-os.environ['NO_PROXY'] = "localhost"
 redmine = Redmine(cst.URL, key=cst.KEY)
 
 users = redmine.user.all(sort='category:desc')
