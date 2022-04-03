@@ -6,7 +6,7 @@ redmine = Redmine(cst.URL, key=cst.KEY)
 
 project = redmine.project.get(1)
 user = redmine.user.get(1)
-group = redmine.group.get(6)
+group = redmine.group.get(5)
 issue = redmine.issue.get(1)
 field = redmine.custom_field.get(1)
 
